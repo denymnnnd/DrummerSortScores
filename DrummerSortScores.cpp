@@ -22,3 +22,10 @@ int main (){
     cin >> numberofScores ;
 
 }   testScores = new double[numberofScores];// 
+
+
+void replaceSubstring (char* string1, const char* string2, const char* sting3){
+    char* found = strstr(string1, string2);
+        while (found != nullptr){
+            strncpy(found, string3,strlen(string3));
+            found = ststr(string1, string2);
